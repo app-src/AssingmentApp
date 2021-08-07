@@ -72,11 +72,11 @@ public class WeatherActivity extends AppCompatActivity {
                 resultCountry.setText(loc +", "+country);
                 temperature.setText(temperature.getText() + current.getTempC().toString()+"°C");
                 condition.setText(condition.getText()+current.getCondition().getText());
-                windSpeed.setText(windSpeed.getText()+current.getWindKph().toString()+"KMph");
-                precipitation.setText(precipitation.getText()+current.getPrecipMm().toString()+"mm");
+                windSpeed.setText(windSpeed.getText()+current.getWindKph().toString()+" KMph");
+                precipitation.setText(precipitation.getText()+current.getPrecipMm().toString()+" mm");
                 humidity.setText(humidity.getText()+current.getHumidity().toString()+"%");
                 cloud.setText(cloud.getText()+current.getCloud().toString()+"%");
-                UV.setText(UV.getText()+current.getUv().toString()+"milliWpm²");
+                UV.setText(UV.getText()+current.getUv().toString()+" mWpm²");
             }
         }, new Response.ErrorListener() {
             @Override

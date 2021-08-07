@@ -15,6 +15,7 @@ import java.util.TimerTask;
 
 import assignmentapp.R;
 
+
 public class MainActivity extends AppCompatActivity {
     EditText editTextStop;
     private Timer timer = new Timer();
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         sportBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SportsActivity.class);
+                Intent intent = new Intent(MainActivity.this, AstronomyActivity.class);
                 EditText editText = (EditText) findViewById(R.id.countyInput);
                 String message = editText.getText().toString();
                 intent.putExtra("countryInput", message);
