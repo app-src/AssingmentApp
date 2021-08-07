@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AssingmentApp</string>
+    <string name="app_name">AssignmentApp</string>
     <string name="country_name">Country Name</string>
     <string name="check_weather_btn_text">Check Weather</string>
     <string name="check_sports_btn_text">Check Sports</string>

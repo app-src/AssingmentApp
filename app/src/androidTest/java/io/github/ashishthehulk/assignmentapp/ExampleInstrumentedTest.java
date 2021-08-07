@@ -1,4 +1,4 @@
-package io.github.ashishthehulk.assingmentapp;
+package io.github.ashishthehulk.assignmentapp;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("io.github.ashishthehulk.assingmentapp", appContext.getPackageName());
+        assertEquals("io.github.ashishthehulk.assignmentapp", appContext.getPackageName());
     }
 }

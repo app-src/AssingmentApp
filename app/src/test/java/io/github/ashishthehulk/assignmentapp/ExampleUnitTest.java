@@ -1,4 +1,4 @@
-package io.github.ashishthehulk.assingmentapp;
+package io.github.ashishthehulk.assignmentapp;
 
 import org.junit.Test;
 

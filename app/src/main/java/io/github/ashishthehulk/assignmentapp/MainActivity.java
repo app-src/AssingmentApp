@@ -1,17 +1,19 @@
-package io.github.ashishthehulk.assingmentapp;
+package io.github.ashishthehulk.assignmentapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import assignmentapp.R;
 
 public class MainActivity extends AppCompatActivity {
     EditText editTextStop;
@@ -78,13 +80,23 @@ public class MainActivity extends AppCompatActivity {
         sportBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"Clicked",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, SportsActivity.class);
+                EditText editText = (EditText) findViewById(R.id.countyInput);
+                String message = editText.getText().toString();
+                intent.putExtra("countryInput", message);
+                startActivity(intent);
+
+
             }
         });
         weatherBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"Clicked",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
+                EditText editText = (EditText) findViewById(R.id.countyInput);
+                String message = editText.getText().toString();
+                intent.putExtra("countryInput", message);
+                startActivity(intent);
             }
         });
 
